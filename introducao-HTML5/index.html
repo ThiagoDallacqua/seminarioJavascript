@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Página Bacanuda com HTML5</title>
+    <meta name="keywords" content="HTML5, CSS3, frontend, estudo, teste">
+    <meta name="description" content="Se você quer se aventurar com o HTML5,
+    entenda aqui a sua estrutura básica, a semântica das principais marcações
+    novas e algumas ferramentas.">
+    <meta name="author" content="Café com Java">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="brand">Café com Java</h1>
+
+      <nav>
+        <ul class="navbar">
+          <li><a href="">Página 1</a></li>
+          <li><a href="">Página 2</a></li>
+          <li><a href="">Página 3</a></li>
+          <li>
+            <a href="" class="iconeDropdown" onclick="ativaMenu();">Página contendo sub-páginas</a>
+            <ul class="subPaginas">
+              <li><a href="">Subpágina 1</a></li>
+              <li><a href="">Subpágina 3</a></li>
+              <li><a href="">Subpágina 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="formBusca" action="index.html" method="post">
+        <input type="text" name="busca" placeholder="Busque conhecimento!">
+        <button type="submit" name="botaoEnviar" class="botaoEnvia"><img src="./assets/iconeLupa.png" alt="ícone de busca" class="imgResponsiva"></button>
+      </form>
+    </header>
+
+    <main>
+      <section class="sectionNoticia">
+        <article class="noticia">
+          <h2>Goku salva a terra novamente</h2>
+
+          <figure class="imgNoticia">
+            <img class="imgResponsiva"  src="./assets/imagemGoku.png" alt="uma foto do nosso maior herói de todos os tempos">
+            <figcaption class="legendaImg">Goku é o bichão mesmo</figcaption>
+          </figure>
+
+          <p class="texto">Spicy jalapeno bacon ipsum dolor amet venison pig pork loin, pork belly pancetta prosciutto
+            filet mignon brisket kevin pastrami spare ribs shankle tri-tip strip steak. Shankle drumstick
+            tenderloin spare ribs doner kevin capicola corned beef shank pig shoulder sausage pastrami. Swine
+            strip steak tail pork, short ribs turkey sirloin tenderloin rump jerky. Landjaeger meatloaf strip
+            steak beef, flank shank sausage short loin cupim t-bone ham hock corned beef.</p>
+
+          <p class="texto">Flank rump andouille, pancetta tenderloin cow frankfurter pork chop shoulder prosciutto short
+            ribs ham hock bresaola. Ham hamburger ham hock flank ground round bacon. Tenderloin doner ribeye
+            jerky sausage pig prosciutto cow, pancetta bresaola spare ribs meatloaf short ribs salami. Bacon
+            leberkas capicola meatloaf. Corned beef strip steak brisket, ham doner frankfurter pork belly jowl
+            ball tip tail. Picanha jowl chicken drumstick boudin. Ground round pork chop pork belly cow t-bone
+            salami picanha tongue meatloaf alcatra.</p>
+
+          <p class="texto">Salami leberkas andouille flank chuck, alcatra drumstick. Cow cupim hamburger ham hock, drumstick
+            shankle ball tip chicken andouille beef ribs chuck pastrami doner. Corned beef frankfurter t-bone
+            chicken chuck pork loin kielbasa rump andouille tongue swine. Shank chicken sirloin kevin pork chop.
+            Jowl capicola ground round, tongue sirloin bacon frankfurter spare ribs boudin sausage short ribs ball
+            tip shoulder tail. Boudin bacon ball tip, pig cupim jerky meatloaf bresaola beef ribs.</p>
+
+          <p class="texto">Meatloaf beef ribs flank bresaola prosciutto, rump bacon burgdoggen ribeye ground round ham strip steak
+            spare ribs kevin. Bacon brisket venison, ham tenderloin sausage landjaeger swine t-bone bresaola prosciutto.
+            Shoulder capicola tail sirloin, pork chop pork loin leberkas tongue strip steak short loin chuck cow. Sausage
+            turkey jerky tenderloin, salami boudin corned beef strip steak meatball turducken hamburger swine ham. Ball
+            tip salami filet mignon kevin beef ham shankle prosciutto frankfurter bresaola shank. Shank alcatra drumstick
+            ham pork fatback andouille. Bresaola ground round pork belly sausage.</p>
+
+          <p class="texto">Filet mignon beef ribs turkey short ribs. Jerky sirloin prosciutto cupim shoulder pork. Swine shoulder turkey
+            shank. Bacon swine cow salami pig pork picanha prosciutto drumstick bresaola corned beef alcatra.</p>
+        </article>
+
+        <aside class="noticiasRelacionadas">
+          <h3>Notícias Relacionadas</h3>
+          <ul class="listaNoticias">
+            <li class="listaItem"><a href="">Mestre Kame tira férisa na mansão da Playboy</a></li>
+            <li class="listaItem"><a href="">Bulma revela o segredo de como ser bela recatada e rica</a></li>
+            <li class="listaItem"><a href="">Não tive imaginação para penssar em mais notícias inúteis</a></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="sectionForm">
+        <h2>Não existe justificativa para este formulário</h2>
+        <form class="formInutil" action="index.html" method="post">
+          <label>
+            Qual o seu personagem favorito?
+            <input type="text" name="nome" placeholder="Digite a resposta aqui">
+          </label>
+          <label>
+            Digite um email qualquer:
+            <input type="email" name="email" placeholder="email@email.com" required>
+          </label>
+          <select>
+            <option disabled selected>Escolha uma das opções</option>
+            <option value="1">1</option>
+            <option value="janeiro">Janeiro</option>
+            <option value="genkidama">Genkidama</option>
+          </select>
+        </form>
+      </section>
+    </main>
+
+
+    <footer>
+      <address class="endereco">
+        Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+        Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.<br>
+        Você tambem pode querer nos visitar:<br>
+        Mozilla Foundation<br>
+        1981 Landings Drive<br>
+        Building K<br>
+        Mountain View, CA 94043-0801<br>
+        USA
+      </address>
+
+      <div class="follow">
+        <h2>Siga-nos</h2>
+        <button type="button" name="button">Facebook</button>
+        <button type="button" name="button">Twitter</button>
+      </div>
+
+      <div class="direitosAutorais">
+        &copy; 2017 Café Com Java, todos os direitos reservados
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
