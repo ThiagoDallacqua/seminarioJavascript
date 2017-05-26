@@ -7,6 +7,7 @@ Olá younglings, neste repositório será mantido todos os aqruivos usados duran
 Mas como iremos usar essas ferramentes muito frequentemente, aconselho a estudá-las:
 
 https://git-scm.com/book/pt-br/v1/Primeiros-passos
+
 https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/
 
 Happy hacking!!!
@@ -20,6 +21,14 @@ https://hipsters.tech .
 https://www.alura.com.br/ .
 
 https://tableless.com.br/ .
+
+Links para o seminário de HTML5:
+
+https://tableless.com.br/html5-estrutura-semantica/
+
+https://medium.com/@eduagni/html5-entendendo-a-estrutura-e-a-sem%C3%A2ntica-db5f17808c7
+
+http://maujor.com/tutorial/escrevendo-html-semantico.php
 
 
 
