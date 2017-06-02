@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>Página HTML Bacanuda!</title>
+    <title>Página Bacanuda com HTML5</title>
+    <meta name="keywords" content="HTML5, CSS3, frontend, estudo, teste">
+    <meta name="description" content="Se você quer se aventurar com o HTML5,
+    entenda aqui a sua estrutura básica, a semântica das principais marcações
+    novas e algumas ferramentas.">
+    <meta name="author" content="Café com Java">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
@@ -11,7 +17,7 @@
 
       <nav>
         <ul class="navbar">
-          <li><a href="https://www.facebook.com">Página 1</a></li>
+          <li><a href="">Página 1</a></li>
           <li><a href="">Página 2</a></li>
           <li><a href="">Página 3</a></li>
           <li>
@@ -26,11 +32,7 @@
       </nav>
 
       <form class="formBusca" action="index.html" method="post">
-        <label>
-          Campo de busca
-          <input type="text" name="busca" placeholder="Busque conhecimento!">
-        </label>
-
+        <input type="text" name="busca" placeholder="Busque conhecimento!">
         <button type="submit" name="botaoEnviar" class="botaoEnvia">
           <img src="./assets/iconeLupa.png" alt="ícone de busca" class="imgResponsiva">
         </button>
@@ -44,7 +46,7 @@
 
           <figure class="imgNoticia">
             <img class="imgResponsiva"  src="./assets/imagemGoku.png" alt="uma foto do nosso maior herói de todos os tempos Goku">
-            <figcaption>Goku é top</figcaption>
+            <figcaption class="legendaImg">Goku é o bichão mesmo</figcaption>
           </figure>
 
           <p class="texto">Spicy jalapeno bacon ipsum dolor amet venison pig pork loin, pork belly pancetta prosciutto
@@ -86,11 +88,39 @@
           </ul>
         </aside>
       </section>
+
+      <section class="sectionForm">
+        <h2>Não existe justificativa para este formulário</h2>
+        <form class="formInutil" action="index.html" method="post">
+          <label>
+            Qual o seu personagem favorito?
+            <input type="text" name="nome" placeholder="Digite a resposta aqui">
+          </label>
+          <label>
+            Digite um email qualquer:
+            <input type="email" name="email" placeholder="email@email.com" required>
+          </label>
+          <select>
+            <option disabled selected>Escolha uma das opções</option>
+            <option value="1">1</option>
+            <option value="janeiro">Janeiro</option>
+            <option value="genkidama">Genkidama</option>
+          </select>
+        </form>
+      </section>
     </main>
+
 
     <footer>
       <address class="endereco">
-        rua das aroeiras n wts
+        Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+        Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.<br>
+        Você tambem pode querer nos visitar:<br>
+        Mozilla Foundation<br>
+        1981 Landings Drive<br>
+        Building K<br>
+        Mountain View, CA 94043-0801<br>
+        USA
       </address>
 
       <div class="follow">
@@ -103,5 +133,7 @@
         &copy; 2017 Café Com Java, todos os direitos reservados
       </div>
     </footer>
+
+    <script type="text/javascript" src="./js/index.js"></script>
   </body>
 </html>

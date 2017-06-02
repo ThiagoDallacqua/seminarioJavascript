@@ -17,7 +17,7 @@ P.S.: Seguem alguns links interessantes para quem curtir a área:
 https://braziljs.org/blog/ .
 
 https://hipsters.tech .
- 
+
 https://www.alura.com.br/ .
 
 https://tableless.com.br/ .
@@ -30,5 +30,10 @@ https://medium.com/@eduagni/html5-entendendo-a-estrutura-e-a-sem%C3%A2ntica-db5f
 
 http://maujor.com/tutorial/escrevendo-html-semantico.php
 
+Links para o seminário de Bootstrap 3:
 
+https://getboostrap.com.br
 
+http://webdevacademy.com.br/tutoriais/bootstrap-3-como-comecar/
+
+http://websocialdev.com/introducao-ao-bootstrap-para-iniciantes-em-desenvolvimento/
