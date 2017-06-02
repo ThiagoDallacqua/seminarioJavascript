@@ -1,0 +1,61 @@
+a:checked, a:visited{
+  outline: none;
+  text-decoration: none;
+}
+
+section{
+  margin: 30px 0;
+}
+
+.sectionJumbotrom{
+  margin-top: 120px;
+}
+
+.sectionForm{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.showAlert{
+  display: none;
+}
+
+.mostraPagina{
+  display: block;
+}
+
+.escondePagina{
+  display: none;
+}
+
+.navTab{
+  padding: 0;
+}
+
+footer{
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: black;
+  text-align: center;
+}
+
+footer .container{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.endereco{
+  text-align: left;
+}
+
+.follow h2{
+  margin-top: 0;
+}
+
+.direitosAutorais{
+  display: flex;
+  align-items: center;
+}

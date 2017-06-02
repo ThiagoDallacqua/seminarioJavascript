@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprendendo Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Café com Java</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Catiguria 1</a></li>
+                  <li><a href="#">Catiguria 2</a></li>
+                  <li><a href="#">Ultima Catiguria</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Forever Alone</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Configurações</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" id="user"></span> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Perfil</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="sectionJumbotrom row">
+        <div class="jumbotron col-xs-12">
+          <h1>Bem vindo ao Café com Java!</h1>
+          <p>Desvende o universo do Front End</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Eu sou um Botão</a></p>
+        </div>
+      </section>
+
+      <section class="sectionPalestras row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="https://scontent.fbsb1-1.fna.fbcdn.net/v/t1.0-9/18700292_1544452755617035_7810268808585959312_n.jpg?oh=36f443484454fe774a3979f8a90209c5&oe=59E03F4A"
+              alt="imagem do evento Café com Java">
+              <div class="caption">
+                <h3>Segundo encontro do Café com Java</h3>
+                <p>uma prévia do texto pode ser colocada aqui</p>
+                <p><a href="#" class="btn btn-primary" role="button">Leia mais</a> <a href="#" class="btn btn-default" role="button">outro exemplo de botão</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="https://scontent.fbsb1-1.fna.fbcdn.net/v/t1.0-9/18700292_1544452755617035_7810268808585959312_n.jpg?oh=36f443484454fe774a3979f8a90209c5&oe=59E03F4A"
+              alt="imagem do evento Café com Java">
+              <div class="caption">
+                <h3>Segundo encontro do Café com Java</h3>
+                <p>uma prévia do texto pode ser colocada aqui</p>
+                <p><a href="#" class="btn btn-primary" role="button">Leia mais</a> <a href="#" class="btn btn-default" role="button">outro exemplo de botão</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="https://scontent.fbsb1-1.fna.fbcdn.net/v/t1.0-9/18700292_1544452755617035_7810268808585959312_n.jpg?oh=36f443484454fe774a3979f8a90209c5&oe=59E03F4A"
+              alt="imagem do evento Café com Java">
+              <div class="caption">
+                <h3>Segundo encontro do Café com Java</h3>
+                <p>uma prévia do texto pode ser colocada aqui</p>
+                <p><a href="#" class="btn btn-primary" role="button">Leia mais</a> <a href="#" class="btn btn-default" role="button">outro exemplo de botão</a></p>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <div class="alert alert-success showAlert" id='formAlert' role="alert">Parabéns! Você enviou este form para <strong>lugar nenhum!</strong></div>
+
+    <section class="sectionForm container-fluid bg-info">
+      <div class="container">
+        <div class="row">
+          <form class="col-xs-12">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de e-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile">Entrada de arquivo</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Exemplo de texto de ajuda em nível de bloco.</p>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Me selecione
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default" id="botaoEnvia">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionPaginas container">
+      <div class="row">
+        <div class="col-xs-12 navTab">
+          <ul class="nav nav-tabs nav-justified">
+            <li role="presentation" class="tabPag active" id="tab1"><a href="#">Home</a></li>
+            <li role="presentation" class="tabPag" id="tab2"><a href="#">Profile</a></li>
+            <li role="presentation" class="tabPag" id="tab3"><a href="#">Messages</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 pagina panel panel-default mostraPagina" id="pagina1">
+          <div class="panel-heading">
+            <h2 class="panel-title">Esta é a primeria página</h2>
+          </div>
+          <div class="panel-body">
+            <p>Spicy jalapeno bacon ipsum dolor amet venison pig pork loin, pork belly pancetta prosciutto
+              filet mignon brisket kevin pastrami spare ribs shankle tri-tip strip steak. Shankle drumstick
+              tenderloin spare ribs doner kevin capicola corned beef shank pig shoulder sausage pastrami. Swine
+              strip steak tail pork, short ribs turkey sirloin tenderloin rump jerky. Landjaeger meatloaf strip
+              steak beef, flank shank sausage short loin cupim t-bone ham hock corned beef.</p>
+
+            <p>Flank rump andouille, pancetta tenderloin cow frankfurter pork chop shoulder prosciutto short
+              ribs ham hock bresaola. Ham hamburger ham hock flank ground round bacon. Tenderloin doner ribeye
+              jerky sausage pig prosciutto cow, pancetta bresaola spare ribs meatloaf short ribs salami. Bacon
+              leberkas capicola meatloaf. Corned beef strip steak brisket, ham doner frankfurter pork belly jowl
+              ball tip tail. Picanha jowl chicken drumstick boudin. Ground round pork chop pork belly cow t-bone
+              salami picanha tongue meatloaf alcatra.</p>
+
+            <p>Salami leberkas andouille flank chuck, alcatra drumstick. Cow cupim hamburger ham hock, drumstick
+              shankle ball tip chicken andouille beef ribs chuck pastrami doner. Corned beef frankfurter t-bone
+              chicken chuck pork loin kielbasa rump andouille tongue swine. Shank chicken sirloin kevin pork chop.
+              Jowl capicola ground round, tongue sirloin bacon frankfurter spare ribs boudin sausage short ribs ball
+              tip shoulder tail. Boudin bacon ball tip, pig cupim jerky meatloaf bresaola beef ribs.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 pagina panel panel-default escondePagina" id="pagina2">
+          <div class="panel-heading">
+            <h2 class="panel-title">Esta é a segunda página</h2>
+          </div>
+          <div class="panel-body">
+            <p>Spicy jalapeno bacon ipsum dolor amet venison pig pork loin, pork belly pancetta prosciutto
+              filet mignon brisket kevin pastrami spare ribs shankle tri-tip strip steak. Shankle drumstick
+              tenderloin spare ribs doner kevin capicola corned beef shank pig shoulder sausage pastrami. Swine
+              strip steak tail pork, short ribs turkey sirloin tenderloin rump jerky. Landjaeger meatloaf strip
+              steak beef, flank shank sausage short loin cupim t-bone ham hock corned beef.</p>
+
+            <p>Flank rump andouille, pancetta tenderloin cow frankfurter pork chop shoulder prosciutto short
+              ribs ham hock bresaola. Ham hamburger ham hock flank ground round bacon. Tenderloin doner ribeye
+              jerky sausage pig prosciutto cow, pancetta bresaola spare ribs meatloaf short ribs salami. Bacon
+              leberkas capicola meatloaf. Corned beef strip steak brisket, ham doner frankfurter pork belly jowl
+              ball tip tail. Picanha jowl chicken drumstick boudin. Ground round pork chop pork belly cow t-bone
+              salami picanha tongue meatloaf alcatra.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 pagina panel panel-default escondePagina" id="pagina3">
+          <div class="panel-heading">
+            <h2 class="panel-title">Esta é a terceira página</h2>
+          </div>
+          <div class="panel-body">
+            <p>Spicy jalapeno bacon ipsum dolor amet venison pig pork loin, pork belly pancetta prosciutto
+              filet mignon brisket kevin pastrami spare ribs shankle tri-tip strip steak. Shankle drumstick
+              tenderloin spare ribs doner kevin capicola corned beef shank pig shoulder sausage pastrami. Swine
+              strip steak tail pork, short ribs turkey sirloin tenderloin rump jerky. Landjaeger meatloaf strip
+              steak beef, flank shank sausage short loin cupim t-bone ham hock corned beef.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="container">
+        <address class="endereco col-xs-12 col-sm-4">
+          Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+          Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.<br>
+          Você tambem pode querer nos visitar:<br>
+          Mozilla Foundation<br>
+          1981 Landings Drive<br>
+          Building K<br>
+          Mountain View, CA 94043-0801<br>
+          USA
+        </address>
+
+        <div class="follow col-xs-12 col-sm-4">
+          <h2>Siga-nos</h2>
+          <button type="button" name="button" class="btn btn-primary">Facebook</button>
+          <button type="button" name="button" class="btn btn-warning">Twitter</button>
+        </div>
+
+        <div class="direitosAutorais col-xs-12 col-sm-4">
+          &copy; 2017 Café Com Java, todos os direitos reservados
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
