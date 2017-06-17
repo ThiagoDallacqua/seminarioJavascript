@@ -1,0 +1,230 @@
+/*CSS para as classes 'universais'*/
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 5%;
+}
+
+.flex-box{
+  padding: 2rem;
+}
+
+*{
+  text-align: center;
+}
+
+/*CSS para o header*/
+.header{
+  background-color: rgb(150, 150, 255);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid black;
+}
+.brand{
+  background-color: rgb(255, 255, 155);
+  border: 1px solid black;
+}
+
+.navbar-container{
+  flex-basis: 60%;
+}
+
+.navbar{
+  background-color: rgb(255, 255, 155);
+  border: 1px solid black;
+  margin: 0;
+  padding: 1.5rem 0;
+  justify-content: space-around;
+}
+
+.navbar-item{
+  background-color: rgb(155, 255, 155);
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+.user{
+  background-color: rgb(255, 255, 155);
+  border: 1px solid black;
+}
+
+/*CSS para os highlights*/
+.highlights{
+  background-color: rgb(255, 150, 150);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.highlights .flex-box{
+  background-color: rgb(255, 255, 155);
+  border: 1px solid black;
+  padding: 0.5rem;
+  flex-basis: 12%;
+  margin-right: 3%;
+}
+
+.highlights .flex-box:nth-of-type(6),
+ .highlights .flex-box:nth-of-type(12){
+   margin-right: 0;
+}
+
+.highlights .flex-box:nth-of-type(n+7){
+   margin-top: .5rem;
+}
+
+/*CSS para o main*/
+.main{
+  background-color: rgb(150, 255, 150);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid black;
+  margin-bottom: 50px;
+}
+
+.article{
+  margin: 0;
+  background-color: rgb(255, 255, 155);
+  border: 1px solid black;
+  align-items: flex-start;
+}
+
+.content{
+  background-color: rgb(150, 150, 255);
+  border: 1px solid black;
+  flex-basis: 75%;
+  align-self: stretch;
+  height: 20rem;
+}
+
+.related{
+  background-color: rgb(150, 150, 255);
+  border: 1px solid black;
+  flex-basis: 15%;
+  padding: 1em;
+}
+
+.aside{
+  background-color: rgb(150, 255, 150);
+  border: 1px solid black;
+  padding: 2em;
+}
+
+.aside:first-of-type{
+  margin-bottom: 2em;
+}
+
+/*CSS para o footer*/
+.footer{
+  background-color: rgb(255, 150, 255);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid black;
+  margin-bottom: 0;
+}
+
+.endereco, .divs, .logo{
+  background-color: rgb(255, 255, 155);
+  border: 1px solid black;
+  padding: 1.5em;
+}
+
+.endereco{
+  align-self: stretch;
+  flex-basis: 20%
+}
+
+.divs{
+  flex-basis: 40%;
+}
+
+.divs .div{
+  background-color: rgb(150, 150, 255);
+  border: 1px solid black;
+  margin-bottom: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.logo{
+  flex-basis: 15%;
+}
+
+/*início das media queries*/
+@media (max-width: 940px) {
+  .highlights .flex-box{
+    flex-basis: 20%;
+    margin: 0;
+  }
+
+  .highlights .flex-box:nth-of-type(n+5){
+     margin-top: .5rem;
+  }
+
+  .content{
+    flex-basis: 65%;
+  }
+
+  .related{
+    flex-basis: 20%;
+  }
+}
+
+@media (max-width: 740px) {
+  .highlights .flex-box{
+    flex-basis: 27.5%;
+  }
+
+  .highlights .flex-box:nth-of-type(n+4){
+     margin-top: .5rem;
+  }
+
+  .article, .footer{
+    flex-wrap: wrap;
+  }
+
+  .content, .related,
+    .endereco, .divs, .logo{
+    flex-basis: 100%;
+  }
+
+  .related,
+    .divs, .logo{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 630px){
+  .header{
+    flex-wrap: wrap;
+  }
+
+  .brand, .navbar-container, .user{
+    flex-basis: 100%;
+  }
+
+  .navbar-container, .user{
+    margin-top: 30px;
+  }
+
+  .highlights .flex-box{
+    flex-basis: 45%;
+  }
+
+  .highlights .flex-box:nth-of-type(n+3){
+     margin-top: .5rem;
+  }
+}
+
+@media (max-width: 520px){
+  .highlights .flex-box{
+    flex-basis: 100%;
+  }
+
+  .highlights .flex-box:nth-of-type(n+2){
+     margin-top: .5rem;
+  }
+}

@@ -1,5 +1,5 @@
 var mq = window.matchMedia("(max-width: 800px)"); //cria um media query para telas de no máximo 800px (tablet)
-var user = $("#user");
+var user = $("#user"); //document.querySelector("elemento");
 var botaoEnvia = $("#botaoEnvia");
 var alerta = $("#formAlert");
 var tabPagina = $(".tabPag");

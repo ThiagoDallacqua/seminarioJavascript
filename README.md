@@ -37,3 +37,13 @@ https://getboostrap.com.br
 http://webdevacademy.com.br/tutoriais/bootstrap-3-como-comecar/
 
 http://websocialdev.com/introducao-ao-bootstrap-para-iniciantes-em-desenvolvimento/
+
+Links para o seminário de Flexbox:
+
+https://www.origamid.com/cursos/css-flexbox/
+
+https://tableless.com.br/flexbox-organizando-seu-layout/
+
+http://pt-br.learnlayout.com/flexbox.html
+
+https://developer.mozilla.org/pt-BR/docs/CSS/Usando_caixas_flexiveis_css
